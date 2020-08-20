@@ -99,3 +99,29 @@ GPS Position                    : 37 deg 43' 58.53" N, 122 deg 30' 8.48" W
 Image Size                      : 228x152
 Megapixels                      : 0.035
 ```
+### Level-4 
+
+```
+Password Reset Functionality
+Our self-reset password functionality is currently down. Please use the following temporary password to login: 9a76a913ee9ae8d5b2
+```
+
+```
+> python icmp-listener.py
+Waiting for pings...
+
+
+agent
+ive noticed
+obelisk hides
+missions
+in images
+check out
+the
+target list
+secret is
+pwn4llthebugz
+FLAG{f514875849460428b4dc40dd72a5a29a}
+
+Learn how to exfiltrate data via ping in a realistic situation: https://www.bengrewell.com/2019/01/01/slipping-out-through-the-front-door
+```
