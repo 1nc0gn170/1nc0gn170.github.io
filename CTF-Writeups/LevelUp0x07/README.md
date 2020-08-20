@@ -31,7 +31,7 @@ HACK Agency
 
 ```    
     <string name="encrypted_chat_key">8b0955d2682eb74347b9e71ea0558c67</string>
-    <string name="flag">FLAG{a445c73c8cb97421d1923a8c51c221fd}</string>
+    <string name="flag">FLAG{REDATCTED}</string>
 ```
 
 ##### _forgotPassword()_
@@ -89,7 +89,7 @@ Resolution Unit                 : inches
 Y Cb Cr Positioning             : Centered
 Exif Version                    : 0231
 Components Configuration        : Y, Cb, Cr, -
-User Comment                    : FLAG{e8606532b027bfd324ea31d1b4f116c2}
+User Comment                    : FLAG{REDATCTED}
 Flashpix Version                : 0100
 GPS Latitude Ref                : North
 GPS Longitude Ref               : West
@@ -121,7 +121,7 @@ the
 target list
 secret is
 pwn4llthebugz
-FLAG{f514875849460428b4dc40dd72a5a29a}
+FLAG{REDATCTED}
 
 Learn how to exfiltrate data via ping in a realistic situation: https://www.bengrewell.com/2019/01/01/slipping-out-through-the-front-door
 ```
@@ -136,7 +136,7 @@ We're not worried about anyone getting in since they have to go through many doo
 
 Once you are ready, you will find that the console lives on 3389.
 
-FLAG{f0dee25f617e2cb820b9b44fcdf90ed8}
+FLAG{REDATCTED}
 
 Regards
 agent_1337
