@@ -16,8 +16,7 @@ Spymaster
 HACK Agency
 
 
-``   /*TODO
-    
+`
     Add secret backdoor to download app - who looks in JS files anyway?
     FLAG{REDATCTED}
   	function return_app_link() {
@@ -26,5 +25,4 @@ HACK Agency
      	document.location.href = "https://07.levelupctf.com/222228a4e79d33a299f5d/s3cretc0mmunications";
     	}
     }
-    */
-``
+`
