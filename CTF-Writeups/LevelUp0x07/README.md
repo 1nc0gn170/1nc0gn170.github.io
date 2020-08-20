@@ -59,3 +59,43 @@ HACK Agency
     }
 }
 ```
+### Level-3
+
+```
+ExifTool Version Number         : 11.16
+File Name                       : chall.png
+Directory                       : .
+File Size                       : 63 kB
+File Modification Date/Time     : 2020:08:13 04:03:45+05:30
+File Access Date/Time           : 2020:08:16 20:28:19+05:30
+File Inode Change Date/Time     : 2020:08:16 20:28:15+05:30
+File Permissions                : rw-r--r--
+File Type                       : PNG
+File Type Extension             : png
+MIME Type                       : image/png
+Image Width                     : 228
+Image Height                    : 152
+Bit Depth                       : 8
+Color Type                      : RGB
+Compression                     : Deflate/Inflate
+Filter                          : Adaptive
+Interlace                       : Noninterlaced
+SRGB Rendering                  : Relative Colorimetric
+Pixels Per Unit X               : 2835
+Pixels Per Unit Y               : 2835
+Pixel Units                     : meters
+Exif Byte Order                 : Big-endian (Motorola, MM)
+Resolution Unit                 : inches
+Y Cb Cr Positioning             : Centered
+Exif Version                    : 0231
+Components Configuration        : Y, Cb, Cr, -
+User Comment                    : FLAG{e8606532b027bfd324ea31d1b4f116c2}
+Flashpix Version                : 0100
+GPS Latitude Ref                : North
+GPS Longitude Ref               : West
+GPS Latitude                    : 37 deg 43' 58.53" N
+GPS Longitude                   : 122 deg 30' 8.48" W
+GPS Position                    : 37 deg 43' 58.53" N, 122 deg 30' 8.48" W
+Image Size                      : 228x152
+Megapixels                      : 0.035
+```
