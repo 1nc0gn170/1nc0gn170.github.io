@@ -125,3 +125,20 @@ FLAG{f514875849460428b4dc40dd72a5a29a}
 
 Learn how to exfiltrate data via ping in a realistic situation: https://www.bengrewell.com/2019/01/01/slipping-out-through-the-front-door
 ```
+### Level-5
+
+```
+Dear agent_521bcd5,
+
+As ordered by Matriarch, I have created a backdoor console that will allow us to launch WannaSpy when time is right.
+
+We're not worried about anyone getting in since they have to go through many doors to actually get in.
+
+Once you are ready, you will find that the console lives on 3389.
+
+FLAG{f0dee25f617e2cb820b9b44fcdf90ed8}
+
+Regards
+agent_1337
+
+```
