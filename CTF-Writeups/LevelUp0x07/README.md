@@ -33,3 +33,29 @@ HACK Agency
     <string name="encrypted_chat_key">8b0955d2682eb74347b9e71ea0558c67</string>
     <string name="flag">FLAG{a445c73c8cb97421d1923a8c51c221fd}</string>
 ```
+
+##### _forgotPassword()_
+
+```
+
+    public void forgotPassword(View view) throws IOException {
+        EditText username = (EditText) findViewById(R.id.username);
+        if (username.getText() != null && !username.getText().toString().isEmpty()) {
+            OkHttpClient webclient = new OkHttpClient();
+            RequestBody post_body = new FormBody.Builder().add("username", username.getText().toString()).build();
+            Request.Builder builder = new Request.Builder();
+            webclient.newCall(builder.url(this.URL + "/d41d8cd98f00b204e9800998ecf8427e/8cd98f00b204e9800998/forgotpassword").post(post_body).build()).execute().code();
+        }
+    }
+```
+##### _encryptedChat()_
+
+```
+    public void encryptedChat() {
+        String key = getApplicationContext().getString(R.string.encrypted_chat_key);
+        new OkHttpClient();
+        Request.Builder builder = new Request.Builder();
+        Request build = builder.url(this.URL + "/fa694c73da13c94e49cc82b/06a28bdb78b6c02e16862a3/chat").header("3NCRYPT3D-CH4T", key).build();
+    }
+}
+```
