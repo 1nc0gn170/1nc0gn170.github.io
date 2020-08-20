@@ -27,3 +27,9 @@ HACK Agency
     	}
     }
 ```
+### Level-2
+
+```    
+    <string name="encrypted_chat_key">8b0955d2682eb74347b9e71ea0558c67</string>
+    <string name="flag">FLAG{a445c73c8cb97421d1923a8c51c221fd}</string>
+```
