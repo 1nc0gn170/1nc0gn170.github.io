@@ -17,6 +17,7 @@ HACK Agency
 
 
 `
+
     Add secret backdoor to download app - who looks in JS files anyway?
     FLAG{REDATCTED}
   	function return_app_link() {
