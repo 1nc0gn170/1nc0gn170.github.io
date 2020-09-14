@@ -21,9 +21,10 @@ agent_1337
 
 
 ```
-Port knocking is a method of externally opening ports on a firewall by generating a connection attempt on a 
-set of  prespecified closed ports.Once a correct sequence of connection attempts is received, the firewall 
-rules are dynamically modified to allow the host which sent the connection attempts to connect over specific port.
+Port knocking is a method of externally opening ports on a firewall by generating a connection attempt
+on a set of  prespecified closed ports.Once a correct sequence of connection attempts is received, the
+firewall rules are dynamically modified to allow the host which sent the connection attempts to connect
+over specific port.
 ```
 
 
