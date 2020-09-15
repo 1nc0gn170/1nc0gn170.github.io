@@ -89,4 +89,6 @@ main()
 
 After running this script I found the port is open.Opening it in  browser shows blank page.
 Checking the respond headers reveals that it's a python server.
-I tried to access the console and Boom!!!.Using console I got the flag $_$
+I tried to access the console and Boom!!!.Using console I got the flag $_$.
+
+Thanks for reading
