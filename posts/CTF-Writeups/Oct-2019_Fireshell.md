@@ -1,4 +1,4 @@
-##### <h1>Idiot_Connection</h1>
+# Idiot_Connection
 
 We are Provided With A Packet Capture File Full Of ICMP Packets,But Actually They Contains HTTP and Other Packets Too..! What They Have Done Is They Added ICMP Packet To Every Packet.
 So We Need To Slice That Portion To Get Original Pcap File.
