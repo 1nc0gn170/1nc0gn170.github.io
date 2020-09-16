@@ -46,7 +46,7 @@ on a set of  prespecified closed ports.Once a correct sequence of connection att
 firewall rules are dynamically modified to allow the host which sent the connection attempts to connect
 over specific port.
 ```
-Yeah now I have a target port,and I need the find the closed ports and thier order.As I said earlier I have 10 more images along with descripton.4 out of those 10 contains numbers on them.
+Yeah now I have a target port,and I need to find the closed ports and thier order.As I said earlier I have 10 more images along with descripton.4 out of those 10 contains numbers on them.
 Now I need to knock the ports,So I grabbed a script from online cause my own script didn't work properly xD.   
 
 ```python
@@ -87,7 +87,7 @@ def main():
 main()
 ```
 
-After running this script I found the port is open.Opening it in  browser shows blank page.
+After running this script I found that port is open.Opening it in  browser shows blank page.
 Checking the respond headers reveals that it's a python server.
 I tried to access the console and Boom!!!.Using console I got the flag $_$.
 
