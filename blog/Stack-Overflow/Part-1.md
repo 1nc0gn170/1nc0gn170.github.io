@@ -41,8 +41,8 @@ Welcome Guest
 
 ```bash
 
-┌─[inc0gn1t0@inc0gn1t0-VirtualBox]─[~/Documents/myUploader/stack]
-└──╼ $echo "AAAAAAAAAAAAAAAA...........AAAAAAAAA" | ./secret 
+┌─[inc0gn1t0@inc0gn1t0-VirtualBox]─[~/Stack0verflow]
+└──╼ $echo "AAAAAAAAAAAAAAAA...........AAAAAAAAA" | ./snippet
 Welcome AAAAAAAAAAAAAAAA...........AAAAAAAAASup3r_S3cr37_S7r1n6
 
 ```
