@@ -26,12 +26,12 @@ Execution flow of above example
 1. A secret variable is created with some secret value.
 2. Then a buffer is initialized with the capacity of 128.
 3. User input will be stored in buffer variable using `read` function.
-3. Finally User input will be echoed back with welcome using printf.
-
+4. Finally User input will be echoed back with welcome using printf.
 
 
 ```bash
-inc0gn1t0@inc0gn1t0-VirtualBox:~/Redacted$ ./snippet 
+┌─[inc0gn1t0@inc0gn1t0-VirtualBox]─[~/Stack0verflow]
+└──╼ $./snippet 
 Guest
 Welcome Guest
 ```
@@ -41,8 +41,9 @@ Welcome Guest
 
 ```bash
 
-inc0gn1t0@inc0gn1t0-VirtualBox:~/Redacted$ echo "AAAAAAAAAAAAA......AAAAAAAA" | ./secret 
-Welcome AAAAAAAAAAAAA......AAAAAAAASup3r_S3cr37_S7r1n6
+┌─[inc0gn1t0@inc0gn1t0-VirtualBox]─[~/Documents/myUploader/stack]
+└──╼ $echo "AAAAAAAAAAAAAAAA...........AAAAAAAAA" | ./secret 
+Welcome AAAAAAAAAAAAAAAA...........AAAAAAAAASup3r_S3cr37_S7r1n6
 
 ```
 
