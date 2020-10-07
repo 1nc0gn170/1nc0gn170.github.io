@@ -1,7 +1,7 @@
 # Bugpoc LFI Challenge
 
-![Something Went Wrong](/posts/CTF-Writeups/Images/bugpoc-1.png)
-![Something Went Wrong](/posts/CTF-Writeups/Images/bugpoc-2.png)
+<center>![Something Went Wrong](/posts/CTF-Writeups/Images/bugpoc-1.png)</center>
+<center>![Something Went Wrong](/posts/CTF-Writeups/Images/bugpoc-2.png)</center>
 
 
 
