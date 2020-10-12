@@ -1,5 +1,5 @@
 # Bugpoc LFI Challenge
-------
+
 <center><img src="/posts/CTF-Writeups/Images/bugpoc-1.png"></center>
 
 We are given a website  **Social Media Sharer** , which will create a set of sharing options for a given website.Our aim to read `/etc/passwd` from their system. 
@@ -78,13 +78,19 @@ and fetches the content for us.
 EXPLOIT
 --------
 ### HTML with meta content
-<script src="https://gist.github.com/n41n4/4bf777633e41dc4c80605add59d66030.js?file=main.html"></script>\
+<script src="https://gist.github.com/n41n4/4bf777633e41dc4c80605add59d66030.js?file=main.html"></script>
+
 ### Python Server
-<script src="https://gist.github.com/n41n4/4bf777633e41dc4c80605add59d66030.js?file=server.py"></script>\
+<script src="https://gist.github.com/n41n4/4bf777633e41dc4c80605add59d66030.js?file=server.py"></script>
+
+-----
+### /etc/passwd
+<center><img src="Images/bugpoc-3.png"></center>
+
+### Server Cloud Credentials
+<script src="https://gist.github.com/n41n4/4bf777633e41dc4c80605add59d66030.js?file=env.json"></script>
+### Server Source Code
+<script src="https://gist.github.com/n41n4/4bf777633e41dc4c80605add59d66030.js?file=app.py"></script>
 
 
-<script src="https://gist.github.com/n41n4/4bf777633e41dc4c80605add59d66030.js?file=env.json"></script>\
-<script src="https://gist.github.com/n41n4/4bf777633e41dc4c80605add59d66030.js?file=app.py"></script>\
-
-
-
+Thanks for reading.
