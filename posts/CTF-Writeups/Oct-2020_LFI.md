@@ -8,7 +8,7 @@ We are given a website  **Social Media Sharer** , which will create a set of sha
 
 So the functionality of this website is simple.It creates content from the given URL based on facebook open graph meta tags ("og:").
 
-So I quickly framed a html file with meta tags 
+So I quickly framed a html file with meta tags.
 
 ```html
 <!DOCTYPE html>
@@ -60,12 +60,12 @@ After many trails,I came to know that the server will only accept
 - gif
 - svg
 
-Any file other than this will fail the `HEAD` request.Smells like server is checking `Content-Type` header.
+Any file other than these will fail the `HEAD` request test.Smells like server is checking `Content-Type` header.
 So any file with content-type starting with `image` (`Content-Type image/..`) will bypass the head test.
 
 ## Observation 4
 
-Here comes the redirection part.As the `HEAD` request is only checking `Content-Type` header,add any other header makes no difference.
+Here comes the redirection part.As the `HEAD` request is only checking `Content-Type` header,adding any other header will make no difference.
 So I thought of adding `Location` header ie. (`Location: file:///etc/passwd`).So when server makes a `GET` request it will be redirected to the specified file
 and fetches the content for us.
 
