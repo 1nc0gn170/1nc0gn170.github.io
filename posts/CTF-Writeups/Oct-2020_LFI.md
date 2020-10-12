@@ -83,12 +83,13 @@ EXPLOIT
 ### Python Server
 <script src="https://gist.github.com/n41n4/4bf777633e41dc4c80605add59d66030.js?file=server.py"></script>
 
------
+## Files
+
 ### /etc/passwd
 <center><img src="Images/bugpoc-3.png"></center>
 
 ### Server Cloud Credentials
-<script src="https://gist.github.com/n41n4/4bf777633e41dc4c80605add59d66030.js?file=env.json"></script>
+<script src="https://gist.github.com/n41n4/4bf777633e41dc4c80605add59d66030.js?file=env.py"></script>
 ### Server Source Code
 <script src="https://gist.github.com/n41n4/4bf777633e41dc4c80605add59d66030.js?file=app.py"></script>
 
