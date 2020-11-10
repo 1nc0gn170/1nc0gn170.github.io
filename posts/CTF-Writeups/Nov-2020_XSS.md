@@ -29,8 +29,7 @@ Then I thought of looking at the source code of frame.html which is loaded into 
 // verify we are in an iframe
 	if (window.name == 'iframe') { .. }
 	else {
-		<h1>Error</h1>
-		<h2>This page can only be viewed from an iframe.</h2>	
+		This page can only be viewed from an iframe.	
 		}
 
 ```
@@ -39,8 +38,7 @@ So by setting `window.name` to `iframe` will open the page normally.
 
 ## Observation-1
 
-- Our input is being reflected in two locations.
-- One is sanitized and handled properly but the other is not.
+- Our input is being reflected in two locations.One is sanitized and handled properly but the other is not.
 
 URL -> `https://wacky.buggywebsite.com/frame.html?param=</title><h1>Welcome</h1>`
 
@@ -94,45 +92,44 @@ I chose to go with the first idea to bypass CSP.
 - Website will now  make a GET request to my server for `/files/analytics/js/frame-analytics.js` file. 
 
 ```js
-	<script nonce="cvqnqvngyara">
-	
-		window.fileIntegrity = window.fileIntegrity || {
-			'rfc' : ' https://w3c.github.io/webappsec-subresource-integrity/',
-			'algorithm' : 'sha256',
 
-		------>	'value' : 'unzMI6SuiNZmTzoOnV4Y9yqAjtSOgiIgyrKvumYRI6E=',	<------
 
-			'creationtime' : 1602687229
+	window.fileIntegrity = window.fileIntegrity || {
+		'rfc' : ' https://w3c.github.io/webappsec-subresource-integrity/',
+		'algorithm' : 'sha256',
+
+	------>	'value' : 'unzMI6SuiNZmTzoOnV4Y9yqAjtSOgiIgyrKvumYRI6E=',	<------
+
+		'creationtime' : 1602687229
+	}
+
+	// verify we are in an iframe
+	if (window.name == 'iframe') {
+
+		// securely load the frame analytics code
+		if (fileIntegrity.value) {
+
+			// create a sandboxed iframe
+			analyticsFrame = document.createElement('iframe');
+
+	------>		analyticsFrame.setAttribute('sandbox', 'allow-scripts allow-same-origin');	<------
+
+			analyticsFrame.setAttribute('class', 'invisible');
+			document.body.appendChild(analyticsFrame);
+
+			// securely add the analytics code into iframe
+			script = document.createElement('script');
+
+	------>		script.setAttribute('src', 'files/analytics/js/frame-analytics.js');		<------
+	------>		script.setAttribute('integrity', 'sha256-'+fileIntegrity.value);		<------
+
+			script.setAttribute('crossorigin', 'anonymous');
+			analyticsFrame.contentDocument.body.appendChild(script);
+
 		}
-	
-		// verify we are in an iframe
-		if (window.name == 'iframe') {
-			
-			// securely load the frame analytics code
-			if (fileIntegrity.value) {
-				
-				// create a sandboxed iframe
-				analyticsFrame = document.createElement('iframe');
 
-		------>		analyticsFrame.setAttribute('sandbox', 'allow-scripts allow-same-origin');	<------
+	} else {   ...	}
 
-				analyticsFrame.setAttribute('class', 'invisible');
-				document.body.appendChild(analyticsFrame);
-
-				// securely add the analytics code into iframe
-				script = document.createElement('script');
-
-		------>		script.setAttribute('src', 'files/analytics/js/frame-analytics.js');		<------
-		------>		script.setAttribute('integrity', 'sha256-'+fileIntegrity.value);		<------
-
-				script.setAttribute('crossorigin', 'anonymous');
-				analyticsFrame.contentDocument.body.appendChild(script);
-				
-			}
-
-		} else {   ...	}
-		
-	</script>
 ```
 
 - Though the file is being accessed by website,It won't gets included into the website.
