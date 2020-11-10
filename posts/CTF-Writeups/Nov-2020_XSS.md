@@ -1,10 +1,10 @@
 # Bugpoc XSS Challenge
 
-<center><img src="./CTF-Writeups/Images/xss-1.jpg"/></center>
+<center><img src="./Images/xss-1.jpg"/></center>
 
 So we are given a website **Wacky Text Generator**. Its functionality is so simple, It'll just add some styles to the text that we enter. And we aim to trigger XSS on https://wacky.buggywebsite.com/..
 
-<center><img src="./CTF-Writeups/Images/xss-2.png"/></center>
+<center><img src="./Images/xss-2.png"/></center>
 
 This website will first replace/remove some characters from our input and loads into an iframe with some styles.
 
@@ -59,7 +59,7 @@ URL -> `https://wacky.buggywebsite.com/frame.html?param=</title><h1>Welcome</h1>
 
 
 ```
-<center><img src="./CTF-Writeups/Images/xss-3.png"/></center>
+<center><img src="./Images/xss-3.png"/></center>
 
 Though our input is directly reflected in the website, we can't trigger alert because of CSP :(  . 
 
@@ -83,7 +83,7 @@ Ways to bypass (AFAIK):
 
 I chose to go with the first idea to bypass CSP.
 
-<center><img src="./CTF-Writeups/Images/xss-4.png"></center>
+<center><img src="./Images/xss-4.png"></center>
 
 ## Observation-2
 
@@ -183,7 +183,7 @@ So with this we can include our js file to the website.
 
 - So finally I thought of leaving iframe and pop an alert on main window (i.e, `window.top.document`) and boom It worked :).
 
-<center><img src="./CTF-Writeups/Images/xss.png"></center>
+<center><img src="./Images/xss.png"></center>
 
 ## Exploit 
 
